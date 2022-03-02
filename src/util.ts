@@ -1,4 +1,9 @@
+/**
+ * ALphabetize a CSS text input by classname and return the result.
+ */
 export const alphabetizeCssByClassName = (text: string) => {
+  const lineBreak = "\n\n";
+
   // Capture all keyframes CSS, remove them from the text, and
   // append them to the start of the final CSS result later
   const regexKeyframes = /@keyframes[^{]+\{([\s\S]+?\})\s*\}/g;
@@ -22,7 +27,7 @@ export const alphabetizeCssByClassName = (text: string) => {
   if (mediaQueries !== null) {
     for (const match of mediaQueries) {
       text = text.replace(match, "");
-      mediaQueriesCss += `${match}\n\n`;
+      mediaQueriesCss += `${lineBreak}${match}`;
     }
   }
 
@@ -55,9 +60,8 @@ export const alphabetizeCssByClassName = (text: string) => {
   });
 
   // Create new CSS result file and write it to the editor document
-  const lineBreak = "\n\n";
   const css = sorted.join(lineBreak);
-  const result = keyframesCss + css + lineBreak + mediaQueriesCss;
+  const result = keyframesCss + css + mediaQueriesCss + "\n";
 
   return result;
 };

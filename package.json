@@ -1,6 +1,6 @@
 {
   "name": "css-sort-classname",
-  "displayName": "css-sort-classname",
+  "displayName": "CSS Sort by Classname",
   "description": "Sort classnames in a CSS file alphabetically",
   "license": "BSD-2-Clause",
   "author": {
@@ -38,6 +38,7 @@
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
     "test:unit": "yarn compile && mocha ./out/test/unit/parse-css.test.js",
+    "test:unit:update": "yarn compile && SNAPSHOT_UPDATE=true mocha ./out/test/unit/parse-css.test.js",
     "test:integration": "node ./out/test/runTest.js"
   },
   "devDependencies": {

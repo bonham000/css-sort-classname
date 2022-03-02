@@ -1,4 +1,3 @@
-import * as assert from "assert";
 import expect from "expect";
 import toMatchSnapshot from "expect-mocha-snapshot";
 import { readFileSync, writeFileSync } from "fs";
