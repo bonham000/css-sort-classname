@@ -31,9 +31,3 @@ It's possible there are more complicated CSS selectors which may not match the e
 ## Debugging
 
 If there are issues or you want to modify/extend this project, there are unit tests in the `src/test/unit` folder which allow you to quickly run the CSS sorting logic and print out results for debugging. You can run these with the `yarn test:unit` command.
-
-## Release Notes
-
-### 0.0.1
-
-Initial release of `css-sort-classname`.
