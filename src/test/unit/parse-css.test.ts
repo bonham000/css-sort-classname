@@ -6,8 +6,8 @@ import { alphabetizeCssByClassName } from "../../util";
 
 expect.extend({ toMatchSnapshot });
 
-describe("parseCSS method correctly alphabetizes CSS by classname", function () {
-  it("extension", function () {
+describe("correctly alphabetizes CSS by classname", function () {
+  it("alphabetizeCssByClassName", function () {
     const TEST_CSS = readFileSync("./src/test/unit/input.css", "utf-8");
     const result = alphabetizeCssByClassName(TEST_CSS);
 

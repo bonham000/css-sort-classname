@@ -44,7 +44,6 @@ export const alphabetizeCssByClassName = (text: string) => {
     if (aMatch !== null && bMatch !== null) {
       const aString = aMatch[0].slice(1);
       const bString = bMatch[0].slice(1);
-      console.log(aString, bString);
       if (aString < bString) {
         return -1;
       } else if (bString > aString) {

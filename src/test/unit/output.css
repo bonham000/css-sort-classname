@@ -41,7 +41,7 @@
 }
 
 .row-cols-2 > * {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   width: 50%;
 }
 
