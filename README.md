@@ -1,4 +1,4 @@
-# css-sort-classname
+# CSS Sort By Classname
 
 This is a VS Code extension to sort a `.css` file alphabetically by classname. It was adapted from the [css-dictionary](https://github.com/waleedj99/css-dictionary) extension first built by @waleedj99.
 
@@ -7,6 +7,10 @@ This extension sorts an entire CSS file, applying the following rules:
 * All `@keyframes` declarations are moved to the top of the file.
 * All `@media` media query declarations are moved to the bottom of the file.
 * All remaining CSS declarations are sorted alphabetically by classname and moved to the middle of the file.
+
+## Demo
+
+WIP
 
 ## Features
 

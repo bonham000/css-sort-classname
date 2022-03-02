@@ -28,10 +28,10 @@ export function activate(context: vscode.ExtensionContext) {
       const text = document.getText();
       const result = alphabetizeCssByClassName(text);
 
-			if (result === null) {
-				vscode.window.showInformationMessage("Failed to parse CSS.");
-				return;
-			}
+      if (result === null) {
+        vscode.window.showInformationMessage("Failed to parse CSS.");
+        return;
+      }
 
       editor.edit((builder) => {
         // Replace the entire document text
@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
           result
         );
         vscode.window.showInformationMessage(
-          `CSS sorted by alphabetical class name. Any media queries are appended at the end.`
+          "CSS sorted by alphabetical class name."
         );
       });
     } else {
