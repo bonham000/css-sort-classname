@@ -10,7 +10,7 @@ This extension sorts an entire CSS file, applying the following rules:
 
 ## Demo
 
-WIP
+![css-sort-demo](https://user-images.githubusercontent.com/18126719/156433100-d0b90a84-384e-41e2-9a24-7186202cad29.gif)
 
 ## Features
 
