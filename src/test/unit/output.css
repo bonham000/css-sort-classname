@@ -1,0 +1,80 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.abc, .def, .xyz {
+  background-color: teal;
+}
+
+.align-content-around {
+  align-content: space-around !important;
+}
+
+.align-content-between {
+  align-content: space-between !important;
+}
+
+.align-content-stretch {
+  align-content: stretch !important;
+}
+
+.blah > * {
+  margin: 2px;
+}
+
+.class-one, .class-two, .class-x {
+  background-color: gray;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.row-cols-1 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  flex: 0 1 auto;
+  width: 50%;
+}
+
+.row-cols-3 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.row-cols-4 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.row-cols-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+

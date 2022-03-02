@@ -1,0 +1,50 @@
+{
+  "name": "css-sort-classname",
+  "displayName": "css-sort-classname",
+  "description": "Sort classnames in a CSS file alphabetically",
+  "license": "BSD-2-Clause",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": ["css", "sort css"],
+  "activationEvents": [
+    "onCommand:css-sort-classname.sortCssClassnames"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "css-sort-classname.sortCssClassnames",
+        "title": "CSS Sort by Classnames"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test:unit": "yarn compile && mocha ./out/test/unit/parse-css.test.js",
+    "test:integration": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.64.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "@vscode/test-electron": "^2.1.2",
+    "eslint": "^8.9.0",
+    "expect": "^27.5.1",
+    "expect-mocha-snapshot": "^2.1.5",
+    "glob": "^7.2.0",
+    "mocha": "^9.2.1",
+    "typescript": "^4.5.5"
+  }
+}
