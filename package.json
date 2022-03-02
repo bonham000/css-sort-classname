@@ -3,6 +3,12 @@
   "displayName": "css-sort-classname",
   "description": "Sort classnames in a CSS file alphabetically",
   "license": "BSD-2-Clause",
+  "author": {
+    "name": "bonham000"
+  },
+  "repository": {
+    "url": "https://github.com/bonham000/css-sort-classname"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.64.0"
