@@ -11,3 +11,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.6]
 
 - Update to preserve comments in CSS files through sorting process.
+
+## [0.0.7]
+
+- Minor update.
