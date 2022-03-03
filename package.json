@@ -10,7 +10,7 @@
   "repository": {
     "url": "https://github.com/bonham000/css-sort-classname"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.64.0"
   },

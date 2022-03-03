@@ -6,4 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.0.5]
 
-- Initial release
+- Initial release.
+
+## [0.0.6]
+
+- Update to preserve comments in CSS files through sorting process.
